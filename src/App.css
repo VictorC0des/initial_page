@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0D3B66;
+  padding: 3%;
+  color: #fff; 
+}
+
+#header button {
+  border: none;
+  padding: 1%;
+  width: 10%;
+  cursor: pointer;
+  background-color: transparent; 
+  color: #fff; 
+  font-size: 1em; 
+  transition: background-color 0.3s ease; 
+}
+
+#header button:hover {
+  background-color: #1B4F72; 
+  color: #fff; 
+}
+
+#center {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+#left-center, #right-center {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px; /* Agrega un poco de padding para dar más espacio */
+  background-color: #fff; /* Fondo blanco para contrastar con el fondo gris del centro */
+  border-radius: 10px; /* Bordes redondeados para coincidir con el centro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+#left-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#left-center img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#left-center p {
+  margin: 5px 0;
+  font-size: 1.2em; /* Aumenta el tamaño de la fuente para mejorar la legibilidad */
+  color: #333;
+  text-align: center; /* Centra el texto para un aspecto más limpio */
+  line-height: 1.5; /* Aumenta el espacio entre líneas para mejorar la legibilidad */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial para un aspecto más limpio */
+
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  background-color: #0D3B66; 
+  color: #fff; 
+  padding: 20px 0;
+}
+
+.footer div {
+  margin: 0 20px;
+  flex: 1; 
+}
+.footer div:last-child {
+  margin-right: 0;
+}
+
+.footer h3 {
+  font-size: 1.2em; 
+  margin-bottom: 10px; 
+}
+
+.footer p {
+  font-size: 0.9em; 
+  line-height: 1.5; 
+}
+#right-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* Agrega un poco de padding para dar más espacio */
+}
+
+#right-center table {
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Combina los bordes de las celdas */
+}
+
+#right-center th, #right-center td {
+  border: 1px solid #ddd; /* Agrega un borde a las celdas */
+  padding: 8px; /* Agrega un poco de padding a las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+#right-center th {
+  background-color: #4CAF50; /* Agrega un color de fondo a las celdas del encabezado */
+  color: white; /* Cambia el color del texto en las celdas del encabezado a blanco */
+}
